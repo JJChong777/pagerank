@@ -1,6 +1,6 @@
 # 6. Option (i) - AI Crawling Strategy
 from pagerank import pagerank_closed_form
-
+import numpy as np
 
 def top_k_crawl_urls(web_graph: dict, pagerank_scores: dict, k: int = 5,
                      blocked_prefixes: tuple = ('/private', '/admin')) -> list:
