@@ -1,15 +1,3 @@
-"""
-PageRank Implementation - Tutorial 3, Question 6
-Cloud Computing Assignment 2
-
-Implements:
-1. Closed-form PageRank derivation
-2. Power iteration algorithm
-3. Small graph examples (graphs 5b from tutorial)
-4. Analysis of p (teleport probability) effects
-5. Crawling strategy (option i)
-"""
-
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -138,7 +126,6 @@ graphs = ['Graph (b)']
 all_scores = [
     [pr_b_closed[1], pr_b_closed[2], pr_b_closed[3], pr_b_closed[4]]
 ]
-labels_a = ['a', 'b', 'c']
 labels_b = ['1', '2', '3', '4']
 
 x = np.arange(len(labels_b))
