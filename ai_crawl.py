@@ -54,8 +54,3 @@ sample_web_graph = {
 
 pr_crawl, *_ = pagerank_closed_form(sample_web_graph, p=0.15)
 top_urls = top_k_crawl_urls(sample_web_graph, pr_crawl, k=5)
-
-print("\nRationale: High-PageRank pages are authoritative hubs that many")
-print("other trusted pages link to -> richer, higher-quality training data.")
-print("Hub bonus rewards pages with many outlinks (more diverse content).")
-print("Robots.txt heuristic filters /private and /admin paths.")
